@@ -1,9 +1,12 @@
-import React, { Component } from 'react'; 
+import React from 'react'; 
 
-class Comment extends Component {
-    render() {
-        return <p>Comment</p>           
-    }
+function Comment( { data } ) {
+    return (
+        <div>
+            <div>{data.author.name}</div>
+            <div>{data.content}</div>
+        </div>
+    )          
 }
 
 export default Comment;

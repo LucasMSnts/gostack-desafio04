@@ -1,9 +1,20 @@
-import React, { Component } from 'react'; 
+import React from 'react';
 
-class Post extends Component {
-    render() {
-        return <p>Post</p>           
-    }
+import Comment from './Comment';
+
+function Post ({ data }){   
+    return (
+        <div>
+            <div>{data.author.name}</div>
+            <div>{data.date}</div>
+            <div>{data.content}</div>
+            <div>
+                {data.comments.map(comment => 
+                    <Comment key={comment.id} data={comment} />
+                )}
+            </div>
+        </div>
+    )
 }
 
 export default Post;
