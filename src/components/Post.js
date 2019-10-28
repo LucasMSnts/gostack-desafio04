@@ -4,11 +4,14 @@ import Comment from './Comment';
 
 function Post ({ data }){   
     return (
-        <div>
-            <div>{data.author.name}</div>
-            <div>{data.date}</div>
-            <div>{data.content}</div>
-            <div>
+        <div className="post">
+            <div className="author">
+                <span>{data.author.name}</span>
+                <span>{data.date}</span>
+            </div>
+            <div className="content">{data.content}</div>            
+            <div className="postcomments">
+                <div className="divider" />
                 {data.comments.map(comment => 
                     <Comment key={comment.id} data={comment} />
                 )}

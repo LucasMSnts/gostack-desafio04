@@ -6,10 +6,10 @@ import Logo from '../assets/logo';
 class Header extends Component {
     render() {
         return (
-            <div className="header">               
+            <header>               
                 <Logo />                
                 <p>Meu perfil</p>
-            </div> 
+            </header> 
         )         
     }
 }

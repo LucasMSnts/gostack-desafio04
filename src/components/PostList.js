@@ -12,7 +12,9 @@ class PostList extends Component {
               avatar: "http://url-da-imagem.com/imagem.jpg"
             },
             date: "04 Jun 2019",
-            content: "Boa noite",
+            content: "lorem ipsum dolor sit amet consectetur adipiscing elit nec gravida hendrerit hac pharetra porttitor litora aenean neque leo sociosqu ultricies tortor habitant " + 
+                      "id rutrum justo vehicula luctus aptent est ante fermentum dictum dis pellentesque urna fringilla feugiat congue dui etiam suscipit nam malesuada netus libero " +
+                      "eu metus mauris maximus ut nisi arcu sodales semper molestie dignissim ridiculus curabitur ",
             comments: [
               {
                 id: 1,
@@ -57,9 +59,13 @@ class PostList extends Component {
         const { posts } = this.state;
 
         return (
-            <div className="container">
-              {posts.map(post => <Post key={post.id} data={post} />)}
-            </div>
+          <div className="container">
+            <div className="posts">       
+              <div>     
+                {posts.map(post => <Post key={post.id} data={post} />)}  
+              </div>
+            </div>          
+          </div>
         );          
     }
 }
