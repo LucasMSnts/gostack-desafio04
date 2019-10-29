@@ -7,8 +7,11 @@ class Header extends Component {
     render() {
         return (
             <header>               
-                <Logo />                
-                <p>Meu perfil</p>
+                <Logo />
+                <div>              
+                    <p>Meu perfil</p>
+                    <img src="https://i.pravatar.cc/150?img=11" alt="teste" />
+                </div> 
             </header> 
         )         
     }

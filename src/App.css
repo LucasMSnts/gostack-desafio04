@@ -26,17 +26,34 @@ header {
     height: 50px;
 }
 
-header svg, p {
+header div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+header p {
+    justify-content: center;
+    align-self: center;
+    margin-right: 5px;
+}
+
+header svg {
     margin: 35px;
 }
 
+header img {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    margin-right: 35px;
+}
 
 .container {
     margin: 10px auto;
     display: flex;
     justify-content: center;
     width: 70%;
-    background: #fff;
     border-radius: 5px;
 }
 
@@ -45,17 +62,42 @@ header svg, p {
     align-items: center;
 }
 
-.post .author {
-    margin-left: 10px;
+.post {
+    background: #fff;
+    border-radius: 5px;
+}
+
+.post img {
+    min-height: 32px;
+    min-width: 32px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    margin: 15px 15px 0 0;
+  }
+
+.author {
+    margin: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 11px;
     color: #9a9a9a;
     line-height: 14px;;
 }
 
+.author div {
+    align-self: center;
+}
+
+.author p {
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
 .content {
-    margin-top: 15px;
+    margin: 15px;
     font-size: 14px;
 }
 
@@ -70,15 +112,21 @@ header svg, p {
 }
 
 .comment {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
+}
+
+.comment img {
+    margin: 0 3px 15px 21px;
 }
 
 .comment p {
     border-radius: 15px;
     background: #eeeeee;
     margin-left: 10px;
-    padding: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
     font-size: 13px;
 }
 

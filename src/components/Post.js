@@ -6,8 +6,11 @@ function Post ({ data }){
     return (
         <div className="post">
             <div className="author">
-                <span>{data.author.name}</span>
-                <span>{data.date}</span>
+                <img src={data.author.avatar} alt={data.author.name} />
+                <div>
+                    <p>{data.author.name}</p>
+                    <span>{data.date}</span>
+                </div>
             </div>
             <div className="content">{data.content}</div>            
             <div className="postcomments">
